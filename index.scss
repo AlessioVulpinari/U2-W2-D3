@@ -25,12 +25,19 @@ main{
     }
     .hero{
         display: flex;
+        align-items: flex-start;
         background-color: $color-bg-hero;
+        padding: 2rem;
 
-            .image-container img{
-            width: 500px;
-            object-fit: cover;
-        }
+            .image-container{
+                @include floating(20px, 0px 10px 20px rgb(0 0 0 / 0.6), 2px solid white);
+                flex-shrink: 0;
+                img {
+                    display: block;
+                    width: 500px;
+                    object-fit: cover;
+                }
+            } 
     }
 }
 
