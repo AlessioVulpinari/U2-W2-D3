@@ -117,6 +117,62 @@ body {
   color: #f4f4f4;
 }
 
+.grid-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-1 .image-container {
+  width: 100%;
+}
+.grid-1 .image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-2 .image-container {
+  width: 50%;
+}
+.grid-2 .image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-3 .image-container {
+  width: 33.3333333333%;
+}
+.grid-3 .image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid-4 .image-container {
+  width: 25%;
+}
+.grid-4 .image-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .padding-inline-xs {
   padding-inline: 0.5rem;
 }
@@ -259,20 +315,6 @@ main .hero {
 }
 main .hero .image-container img {
   width: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-main .grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-main .grid-container .image-container {
-  width: 40%;
-}
-main .grid-container img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
