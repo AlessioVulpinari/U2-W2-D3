@@ -1,7 +1,76 @@
-@import url(partial/_reset.scss);
-@import url(partial/_animation.scss);
-@import url(partial/_botton.scss);
-@import url(partial/_color.scss);
-@import url(partial/_font.scss);
-@import url(partial/_mixin.scss);
-@import url(partial/_spacing.scss);
+@import "./partial/reset";
+@import "./partial/animation";
+@import "./partial/botton";
+@import "./partial/color";
+@import "./partial/font";
+@import "./partial/mixin";
+@import "./partial/spacing";
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+}
+
+
+main{
+    max-width: 80%;
+    margin-inline: auto;
+    margin-top: calc(50px + 1rem);
+    section{
+        text-align: center;
+      
+    }
+    .hero{
+        display: flex;
+        background-color: $color-bg-hero;
+
+            .image-container img{
+            width: 500px;
+            object-fit: cover;
+        }
+    }
+
+    .grid-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        .image-container{
+            width: 40%;
+        } img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    ul{
+        display: flex;
+        align-items: center;
+
+        li:first-of-type {
+            margin-inline-end: auto;
+        }
+
+        li{
+            list-style: none;
+            margin-left: 0;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    
+    #icon{
+        width: 40px;
+        height: 40px;
+    }
+}
